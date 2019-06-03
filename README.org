@@ -1,0 +1,6 @@
+* Contributing
+In order to avoid conflicts for the sake of a good organization, key binding are named with the following convention: moduleName_functionName.
+
+** Support new languages
+Currently I only support C/C++ and Java. Eclipse has some special command for every language. Adding a new language is super easy!
+Do ~grep cdt -r .~ and ~grep jdt -r .~ from the project root directory to see special commands that needs to be adapted to other languages.
