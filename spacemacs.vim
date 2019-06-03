@@ -1,0 +1,19 @@
+source ~/spaceclipse/spacemacs/settings.vim
+
+source ~/spaceclipse/spacemacs/applications.vim
+source ~/spaceclipse/spacemacs/buffers.vim
+source ~/spaceclipse/spacemacs/compile-comments.vim
+source ~/spaceclipse/spacemacs/errors.vim
+source ~/spaceclipse/spacemacs/files.vim
+source ~/spaceclipse/spacemacs/help.vim
+source ~/spaceclipse/spacemacs/jump-join-split.vim
+source ~/spaceclipse/spacemacs/leader.vim
+source ~/spaceclipse/spacemacs/misc.vim
+source ~/spaceclipse/spacemacs/projects.vim
+source ~/spaceclipse/spacemacs/quit.vim
+source ~/spaceclipse/spacemacs/search-symbol.vim
+source ~/spaceclipse/spacemacs/text.vim
+source ~/spaceclipse/spacemacs/toggles.vim
+source ~/spaceclipse/spacemacs/ui_toggles-themes.vim
+source ~/spaceclipse/spacemacs/windows.vim
+source ~/spaceclipse/spacemacs/zoom.vim
