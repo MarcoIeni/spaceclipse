@@ -24,3 +24,7 @@ nnoremap <leader>bn    :buffers_nextTab<cr>
 " Previous tab
 eclipseaction buffers_previousTab org.eclipse.ui.navigate.previousTab
 nnoremap <leader>bp    :buffers_previousTab<cr>
+
+" Revert buffer
+eclipseaction buffers_revert org.eclipse.ui.file.revert
+nnoremap <leader>bR    :buffers_revert<cr>

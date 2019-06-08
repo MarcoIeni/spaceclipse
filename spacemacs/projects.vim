@@ -9,3 +9,7 @@ nnoremap <leader>pp    :projects_switchProject<cr>
 " Show package explorer
 eclipseaction projects_showPackageExplorer org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.jdt.ui.PackageExplorer)
 nnoremap <leader>pt    :projects_showPackageExplorer<cr>
+
+" Invalidate cache
+eclipseaction projects_invalidateCache org.eclipse.cdt.ui.menu.updateWithModifiedFiles
+nnoremap <leader>pI    :projects_invalidateCache<cr>
