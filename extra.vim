@@ -5,6 +5,7 @@ source ~/spaceclipse/extra/buffers.vim
 source ~/spaceclipse/extra/errors.vim
 source ~/spaceclipse/extra/help.vim
 source ~/spaceclipse/extra/files.vim
+source ~/spaceclipse/extra/git-vcs.vim
 source ~/spaceclipse/extra/jump.vim
 source ~/spaceclipse/extra/perspectives.vim
 source ~/spaceclipse/extra/projects.vim
