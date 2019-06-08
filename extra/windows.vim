@@ -1,8 +1,6 @@
 eclipseaction window_cloneEditor org.eclipse.ui.window.newEditor
 nnoremap <leader>wc    :window_cloneEditor<cr>
 
-eclipseaction windows_nextPerspective org.eclipse.ui.window.nextPerspective
-nnoremap <leader>wp    :windows_nextPerspective<cr>
 
 eclipseaction windows_nextView org.eclipse.ui.window.nextView
 nnoremap <leader>wV    :windows_nextView<cr>
