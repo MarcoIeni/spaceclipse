@@ -6,6 +6,7 @@ source ~/spaceclipse/spacemacs/compile-comments.vim
 source ~/spaceclipse/spacemacs/errors.vim
 source ~/spaceclipse/spacemacs/files.vim
 source ~/spaceclipse/spacemacs/help.vim
+source ~/spaceclipse/spacemacs/git-vcs.vim
 source ~/spaceclipse/spacemacs/jump-join-split.vim
 source ~/spaceclipse/spacemacs/leader.vim
 source ~/spaceclipse/spacemacs/misc.vim
