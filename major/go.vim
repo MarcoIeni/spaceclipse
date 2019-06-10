@@ -1,3 +1,7 @@
+" Toggle source/header
+au "C/C++ Editor" eclipseaction go_otherFile org.eclipse.cdt.ui.edit.text.c.toggle.source.header
+nnoremap <leader>mga    :go_otherFile<cr>
+
 " Go to declaration
 au "Java Editor" eclipseaction go_declaration org.eclipse.jdt.ui.edit.text.java.open.editor
 au "C/C++ Editor" eclipseaction go_declaration org.eclipse.cdt.ui.edit.opendecl
