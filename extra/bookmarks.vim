@@ -7,5 +7,5 @@ eclipseaction bookmarks_list org.eclipse.ui.views.showView(org.eclipse.ui.views.
 nnoremap <leader>Bl    :bookmarks_list<cr>
 
 " Next bookmark
-eclipseaction bookmarks_next org.eclipse.cdt.ui.edit.text.c.goto.next.bookmark
+au "C/C++ Editor" eclipseaction bookmarks_next org.eclipse.cdt.ui.edit.text.c.goto.next.bookmark
 nnoremap <leader>Bn    :bookmarks_next<cr>
