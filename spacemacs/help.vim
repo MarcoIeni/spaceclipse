@@ -10,3 +10,7 @@ nnoremap <leader>h<space>    :help_search<cr>
 
 eclipseaction help_contents org.eclipse.ui.help.helpContents
 nnoremap <leader>hr    :help_contents<cr>
+
+" Tip of day
+eclipseaction help_tip org.eclipse.tips.ide.command.open
+nnoremap <leader>hT    :help_tip<cr>

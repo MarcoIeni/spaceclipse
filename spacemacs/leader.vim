@@ -8,3 +8,7 @@ vnoremap <leader><space>    :leader_quickAccess<cr>
 " (like in spacemacs).
 eclipseaction leader_findTextInProject org.eclipse.search.ui.performTextSearchWorkspace
 nnoremap <leader>*    :leader_findTextInProject<cr>
+
+" Comment line
+nnoremap <leader>;;    :comments_line<cr>
+vnoremap <leader>;;    :comments_line<cr>
