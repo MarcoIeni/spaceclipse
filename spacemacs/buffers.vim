@@ -15,7 +15,7 @@ nnoremap <leader>bh    :buffers_welcomeScreen<cr>
 vnoremap <leader>bh    :buffers_welcomeScreen<cr>
 
 eclipseaction buffers_closeOthers org.eclipse.ui.file.closeOthers
-nnoremap <leader>b<C-d>    :buffers_closeOthers<CR>
+nnoremap <leader>b<C-d>    :buffers_closeOthers<cr>
 
 " Next tab
 eclipseaction buffers_nextTab org.eclipse.ui.navigate.nextTab
