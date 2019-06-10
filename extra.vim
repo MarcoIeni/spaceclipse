@@ -9,6 +9,7 @@ source ~/spaceclipse/extra/git-vcs.vim
 source ~/spaceclipse/extra/jump.vim
 source ~/spaceclipse/extra/perspectives.vim
 source ~/spaceclipse/extra/projects.vim
+source ~/spaceclipse/extra/run.vim
 source ~/spaceclipse/extra/search.vim
 source ~/spaceclipse/extra/toggles.vim
 source ~/spaceclipse/extra/ui_toggles-themes.vim
