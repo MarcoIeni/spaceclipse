@@ -1,51 +1,88 @@
-" Place cursor on the class that you want to move. TODO: not working
-eclipseaction refactoring_move org.eclipse.ui.edit.move
-nnoremap <leader>mrm    :refactoring_move<cr>
-
 " Code cleanup
-eclipseaction refactoring_cleanUp org.eclipse.jdt.ui.edit.text.java.clean.up
+au "Java Editor" eclipseaction refactoring_cleanUp org.eclipse.jdt.ui.edit.text.java.clean.up
 nnoremap <leader>mrC    :refactoring_cleanUp<cr>
 
 " Create constructor using fields
-eclipseaction refactoring_generateConstructorUsingFields org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields
+au "Java Editor" eclipseaction refactoring_generateConstructorUsingFields org.eclipse.jdt.ui.edit.text.java.generate.constructor.using.fields
 nnoremap <leader>mrc    :refactoring_generateConstructorUsingFields<cr>
 
+" Encapsulate field
+au "Java Editor" eclipseaction refactoring_encapsulate org.eclipse.jdt.ui.edit.text.java.self.encapsulate.field
+nnoremap <leader>mrE    :refactoring_encapsulate<cr>
+
+" Extract class
+au "Java Editor" eclipseaction refactoring_extractClass org.eclipse.jdt.ui.edit.text.java.extract.class
+nnoremap <leader>mreC    :refactoring_extractClass<cr>
+
+" Extract constant
+au "Java Editor" eclipseaction refactoring_extractConstant org.eclipse.jdt.ui.edit.text.java.extract.constant
+au "C/C++ Editor" eclipseaction refactoring_extractConstant org.eclipse.cdt.ui.refactor.extract.constant
+nnoremap <leader>mrec    :refactoring_extractConstant<cr>
+
+" Extract interface
+au "Java Editor" eclipseaction refactoring_extractInterface org.eclipse.jdt.ui.edit.text.java.extract.interface
+nnoremap <leader>mrei    :refactoring_extractInterface<cr>
+
+" Extract method
+au "Java Editor" eclipseaction refactoring_extractMethod org.eclipse.jdt.ui.edit.text.java.extract.method
+au "C/C++ Editor" eclipseaction refactoring_extractMethod org.eclipse.cdt.ui.refactor.extract.function
+vnoremap <leader>mrem    :refactoring_extractMethod<cr>
+
+" Extract local variable
+au "Java Editor" eclipseaction refactoring_extractLocalVariable org.eclipse.jdt.ui.edit.text.java.extract.local.variable
+au "C/C++ Editor" eclipseaction refactoring_extracLocalVariable org.eclipse.cdt.ui.refactor.extract.local.variable
+nnoremap <leader>mrev    :refactoring_extractLocalVariable<cr>
+
+" Extract superclass
+au "Java Editor" eclipseaction refactoring_extractSuperclass org.eclipse.jdt.ui.edit.text.java.extract.superclass
+nnoremap <leader>mres    :refactoring_extractSuperclass<cr>
+vnoremap <leader>mres    :refactoring_extractSuperclass<cr>
+
 " Generate getters and setters
-eclipseaction refactoring_generateGetterSetter org.eclipse.jdt.ui.edit.text.java.create.getter.setter
+au "Java Editor" eclipseaction refactoring_generateGetterSetter org.eclipse.jdt.ui.edit.text.java.create.getter.setter
+au "C/C++ Editor" eclipseaction refactoring_generateGetterSetter org.eclipse.cdt.ui.refactor.getters.and.setters
 nnoremap <leader>mrg    :refactoring_generateGetterSetter<cr>
 
 " Generate hashCode() and equals()
-eclipseaction refactoring_generateHashcodeEquals org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals
+au "Java Editor" eclipseaction refactoring_generateHashcodeEquals org.eclipse.jdt.ui.edit.text.java.generate.hashcode.equals
 nnoremap <leader>mrh    :refactoring_generateHashcodeEquals<cr>
 
-" Generate toString()
-eclipseaction refactoring_generateToString org.eclipse.jdt.ui.edit.text.java.generate.tostring
-nnoremap <leader>mrs    :refactoring_generateToString<cr>
-
-" Optimize imports
-eclipseaction refactoring_organizeImports org.eclipse.jdt.ui.edit.text.java.organize.imports
-nnoremap <leader>mri    :refactoring_organizeImports<cr>
-
 " Implement methods
-eclipseaction refactoring_implementMethods org.eclipse.jdt.ui.edit.text.java.override.methods
+au "Java Editor" eclipseaction refactoring_implementMethods org.eclipse.jdt.ui.edit.text.java.override.methods
+au "C/C++ Editor" eclipseaction refactoring_implementMethods org.eclipse.cdt.ui.refactor.implement.method
 nnoremap <leader>mrI    :refactoring_implementMethods<cr>
 
-" Extract method
-eclipseaction refactoring_extractMethod org.eclipse.jdt.ui.correction.extractMethodInplace.assist
-vnoremap <leader>mrem    :refactoring_extractMethod<cr>
+" Optimize imports
+au "Java Editor" eclipseaction refactoring_organizeImports org.eclipse.jdt.ui.edit.text.java.organize.imports
+au "C/C++ Editor" eclipseaction refactoring_organizeImports org.eclipse.cdt.ui.edit.text.c.organize.includes
+nnoremap <leader>mri    :refactoring_organizeImports<cr>
 
-" Extract superclass
-eclipseaction refactoring_extractSuperclass org.eclipse.jdt.ui.edit.text.java.extract.superclass
-nnoremap <leader>mres    :refactoring_extractSuperclass<cr>
-
-" Choose a refactoring action
-eclipseaction refactoring_refactoringMenu org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu
-nnoremap <leader>mrR    :refactoring_refactoringMenu<cr>
-
-" Source menu
-eclipseaction refactoring_sourceMenu org.eclipse.jdt.ui.edit.text.java.source.quickMenu
-nnoremap <leader>mrS    :refactoring_sourceMenu<cr>
+" Change method signature
+au "Java Editor" eclipseaction refactoring_methodSignature org.eclipse.jdt.ui.edit.text.java.modify.method.parameters
+nnoremap <leader>mrM    :refactoring_methodSignature<cr>
 
 " Sort Members
-eclipseaction refactoring_sortMembers org.eclipse.jdt.ui.edit.text.java.sort.members
+au "Java Editor" eclipseaction refactoring_sortMembers org.eclipse.jdt.ui.edit.text.java.sort.members
 nnoremap <leader>mrm    :refactoring_sortMembers<cr>
+
+" Choose a refactoring action
+au "Java Editor" eclipseaction refactoring_menu org.eclipse.jdt.ui.edit.text.java.refactor.quickMenu
+nnoremap <leader>mrR    :refactoring_menu<cr>
+
+" Rename
+au "Java Editor" eclipseaction refactoring_rename org.eclipse.jdt.ui.edit.text.java.rename.element
+au "C/C++ Editor" eclipseaction refactoring_rename org.eclipse.cdt.ui.edit.text.rename.element
+nnoremap <leader>mrr    :refactoring_rename<cr>
+
+" Source menu
+au "Java Editor" eclipseaction refactoring_sourceMenu org.eclipse.jdt.ui.edit.text.java.source.quickMenu
+au "C/C++ Editor" eclipseaction refactoring_sourceMenu org.eclipse.cdt.ui.edit.text.c.source.quickMenu
+nnoremap <leader>mrS    :refactoring_sourceMenu<cr>
+
+" Generate toString()
+au "Java Editor" eclipseaction refactoring_generateToString org.eclipse.jdt.ui.edit.text.java.generate.tostring
+nnoremap <leader>mrs    :refactoring_generateToString<cr>
+
+" Toggle function
+au "C/C++ Editor" eclipseaction refactoring_toggleFunction org.eclipse.cdt.ui.refactor.toggle.function
+nnoremap <leader>mrt    :refactoring_toggleFunction<cr>
