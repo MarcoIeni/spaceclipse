@@ -7,7 +7,8 @@ eclipseaction helpHierarchy_readAccess org.eclipse.jdt.ui.edit.text.java.search.
 nnoremap <leader>mhr    :helpHierarchy_readAccess<cr>
 
 " Show usages
-eclipseaction helpHierarchy_showUsages org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace
+au "Java Editor" eclipseaction helpHierarchy_showUsages org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace
+au "C/C++ Editor" eclipseaction helpHierarchy_showUsages org.eclipse.cdt.ui.search.findrefs
 nnoremap <leader>mhu    :helpHierarchy_showUsages<cr>
 
 " Show write access in workspace
@@ -19,5 +20,6 @@ eclipseaction helpHierarchy_openJavadoc org.eclipse.jdt.ui.edit.text.java.open.e
 nnoremap <leader>mhh    :helpHierarchy_openJavadoc<cr>
 
 " Show inheritance hierarchy
-eclipseaction helpHierarchy_typeHierarchy org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy
+au "Java Editor" eclipseaction helpHierarchy_typeHierarchy org.eclipse.jdt.ui.edit.text.java.open.type.hierarchy
+au "C/C++ Editor" eclipseaction helpHierarchy_typeHierarchy org.eclipse.cdt.ui.edit.open.quick.type.hierarchy
 nnoremap <leader>mhi    :helpHierarchy_typeHierarchy<cr>
