@@ -8,7 +8,19 @@ vnoremap <leader><space>    :leader_quickAccess<cr>
 " (like in spacemacs).
 eclipseaction leader_findTextInProject org.eclipse.search.ui.performTextSearchWorkspace
 nnoremap <leader>*    :leader_findTextInProject<cr>
+vnoremap <leader>*    :leader_findTextInProject<cr>
 
 " Comment line
 nnoremap <leader>;;    :comments_line<cr>
-vnoremap <leader>;;    :comments_line<cr>
+vnoremap <leader>;     :comments_line<cr>
+
+" Open terminal.
+" You may need to install 'TM Terminal' from the Eclipse */releases update site
+nnoremap <leader>!    :applications_shell<cr>
+vnoremap <leader>!    :applications_shell<cr>
+nnoremap <leader>'    :applications_shell<cr>
+vnoremap <leader>'    :applications_shell<cr>
+
+" Show key bindings
+nnoremap <leader>?    :help_key<cr>
+vnoremap <leader>?    :help_key<cr>
