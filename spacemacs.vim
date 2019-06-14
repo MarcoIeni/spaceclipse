@@ -5,13 +5,17 @@ source ~/spaceclipse/spacemacs/buffers.vim
 source ~/spaceclipse/spacemacs/compile-comments.vim
 source ~/spaceclipse/spacemacs/errors.vim
 source ~/spaceclipse/spacemacs/files.vim
+source ~/spaceclipse/spacemacs/frame.vim
 source ~/spaceclipse/spacemacs/help.vim
 source ~/spaceclipse/spacemacs/git-vcs.vim
+source ~/spaceclipse/spacemacs/insertion.vim
 source ~/spaceclipse/spacemacs/jump-join-split.vim
 source ~/spaceclipse/spacemacs/leader.vim
 source ~/spaceclipse/spacemacs/misc.vim
+source ~/spaceclipse/spacemacs/narrow-numbers.vim
 source ~/spaceclipse/spacemacs/projects.vim
 source ~/spaceclipse/spacemacs/quit.vim
+source ~/spaceclipse/spacemacs/registers-rings-resume.vim
 source ~/spaceclipse/spacemacs/search-symbol.vim
 source ~/spaceclipse/spacemacs/text.vim
 source ~/spaceclipse/spacemacs/toggles.vim
