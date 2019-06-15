@@ -7,5 +7,5 @@ eclipseaction applications_shellLaunch org.eclipse.tm.terminal.view.ui.command.l
 nnoremap <leader>aS    :applications_shellLaunch<cr>
 
 " Marketplace
-eclipseaction applications_marketplace org.eclipse.epp.mpc.ui.command.showMarketplaceWizard
-nnoremap <leader>aK    :applications_marketplace<cr>
+nnoremap <leader>aK    :help_marketplace<cr>
+vnoremap <leader>aK    :help_marketplace<cr>

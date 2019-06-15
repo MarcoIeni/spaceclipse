@@ -11,7 +11,6 @@ eclipseaction git_fetch org.eclipse.egit.ui.team.SimpleFetch
 nnoremap <leader>gF    :git_fetch<cr>
 
 " Git pull
-eclipseaction git_pull org.eclipse.egit.ui.team.Pull
 nnoremap <leader>gP    :git_pull<cr>
 
 " Git push
