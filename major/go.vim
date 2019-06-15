@@ -17,6 +17,11 @@ vnoremap <leader>mgj    :go_nextMember<cr>
 nnoremap <leader>mgn    :go_nextMember<cr>
 vnoremap <leader>mgn    :go_nextMember<cr>
 
+" Go to implementation
+eclipseuiaction go_implementation org.eclipse.jdt.ui.edit.text.java.open.implementation
+nnoremap <leader>mgi    :go_implementation<cr>
+vnoremap <leader>mgi    :go_implementation<cr>
+
 " Previous member
 au "Java Editor" eclipseaction go_previousMember org.eclipse.jdt.ui.edit.text.java.goto.previous.member
 au "C/C++ Editor" eclipseaction go_previousMember org.eclipse.cdt.ui.edit.text.c.goto.prev.member
