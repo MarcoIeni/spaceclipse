@@ -11,3 +11,4 @@ vnoremap <leader>cB    :comments_removeBlock<cr>
 " Add javadoc
 au "Java Editor" eclipseaction comments_javadoc org.eclipse.jdt.ui.edit.text.java.add.javadoc.comment
 nnoremap <leader>cj    :comments_javadoc<cr>
+vnoremap <leader>cj    :comments_javadoc<cr>
