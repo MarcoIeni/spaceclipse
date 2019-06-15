@@ -13,6 +13,11 @@ eclipseaction buffers_welcomeScreen org.eclipse.ui.help.quickStartAction
 nnoremap <leader>bh    :buffers_welcomeScreen<cr>
 vnoremap <leader>bh    :buffers_welcomeScreen<cr>
 
+" Show error log
+eclipseaction buffers_errorLog org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.pde.runtime.LogView)
+nnoremap <leader>bm    :buffers_errorLog<cr>
+vnoremap <leader>bm    :buffers_errorLog<cr>
+
 " Next tab
 eclipseaction buffers_nextTab org.eclipse.ui.navigate.nextTab
 nnoremap <leader>bn    :buffers_nextTab<cr>

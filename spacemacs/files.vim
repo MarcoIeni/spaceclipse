@@ -29,6 +29,11 @@ vnoremap <leader>fF    :files_open<cr>
 nnoremap <leader>ff    :files_open<cr>
 vnoremap <leader>ff    :files_open<cr>
 
+" File search
+eclipseaction file_searchProject org.eclipse.search.ui.openFileSearchPage
+nnoremap <leader>fg    :file_searchProject<cr>
+vnoremap <leader>fg    :file_searchProject<cr>
+
 " Open file externally
 eclipseaction files_openExternally org.eclipse.ui.navigate.showInQuickMenu
 nnoremap <leader>fo    :files_openExternally<cr>
@@ -43,3 +48,8 @@ vnoremap <leader>fS    :files_saveAll<cr>
 eclipseaction files_save org.eclipse.ui.file.save
 nnoremap <leader>fs    :files_save<cr>
 vnoremap <leader>fs    :files_save<cr>
+
+" Project explorer
+eclipseaction files_projectExplorer org.eclipse.ui.views.showView(org.eclipse.ui.views.showView.viewId=org.eclipse.ui.navigator.ProjectExplorer)
+nnoremap <leader>ft    :files_projectExplorer<cr>
+vnoremap <leader>ft    :files_projectExplorer<cr>
