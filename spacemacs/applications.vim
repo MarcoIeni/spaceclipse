@@ -8,7 +8,7 @@ eclipseaction applications_todo org.eclipse.ui.views.showView(org.eclipse.ui.vie
 nnoremap <leader>aot    :applications_todo<cr>
 vnoremap <leader>aot    :applications_todo<cr>
 
-" Open terminal.
+" Open terminal
 " You may need to install 'TM Terminal' from the Eclipse */releases update site
 eclipseaction applications_shell org.eclipse.tm.terminal.connector.local.command.launch
 nnoremap <leader>as    :applications_shell<cr>

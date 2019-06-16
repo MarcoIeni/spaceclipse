@@ -18,7 +18,7 @@ eclipseaction files_preferences org.eclipse.ui.window.preferences
 nnoremap <leader>fed    :files_preferences<cr>
 vnoremap <leader>fed    :files_preferences<cr>
 
-" Reload .vrapperrc
+" Reload ~/.vrapperrc
 nnoremap <leader>feR    :source ~/.vrapperrc<cr>
 vnoremap <leader>feR    :source ~/.vrapperrc<cr>
 

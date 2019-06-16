@@ -23,9 +23,9 @@ eclipseaction buffers_nextTab org.eclipse.ui.navigate.nextTab
 nnoremap <leader>bn    :buffers_nextTab<cr>
 vnoremap <leader>bn    :buffers_nextTab<cr>
 
-" Substitute the whole content of the buffer with the content of your clipboard
-nnoremap <leader>bP    ggVGp<CR>
-vnoremap <leader>bP    <Esc>ggVGp<CR>
+" Substitute the content of the buffer with the content of your clipboard
+nnoremap <leader>bP    ggVGp<cr>
+vnoremap <leader>bP    <Esc>ggVGp<cr>
 
 " Previous tab
 eclipseaction buffers_previousTab org.eclipse.ui.navigate.previousTab
@@ -43,9 +43,10 @@ nnoremap <leader>bx    :buffers_closeAll<cr>
 vnoremap <leader>bx    :buffers_closeAll<cr>
 
 " Copy whole buffer
-nnoremap <leader>bY    :%y<CR>
-vnoremap <leader>bY    <Esc>:%y<CR>
+nnoremap <leader>bY    :%y<cr>
+vnoremap <leader>bY    <Esc>:%y<cr>
 
+" Close other tabs
 eclipseaction buffers_closeOthers org.eclipse.ui.file.closeOthers
 nnoremap <leader>b<C-d>    :buffers_closeOthers<cr>
 vnoremap <leader>b<C-d>    :buffers_closeOthers<cr>

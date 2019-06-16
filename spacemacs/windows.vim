@@ -12,11 +12,11 @@ vnoremap <leader>w-    :windows_splitHorizontally<cr>
 nnoremap <leader>ws    :windows_splitHorizontally<cr>
 vnoremap <leader>ws    :windows_splitHorizontally<cr>
 
+" New frame
+nnoremap <leader>wF    :frame_new<cr>
+vnoremap <leader>wF    :frame_new<cr>
+
 " Maximize window
 eclipseaction windows_maximize org.eclipse.ui.window.maximizePart
 nnoremap <leader>wm    :windows_maximize<cr>
 vnoremap <leader>wm    :windows_maximize<cr>
-
-" New frame
-nnoremap <leader>wF    :frame_new<cr>
-vnoremap <leader>wF    :frame_new<cr>

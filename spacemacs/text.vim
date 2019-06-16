@@ -9,12 +9,12 @@ eclipseaction text_deleteTrailingWhitespaces org.eclipse.ui.edit.text.removeTrai
 nnoremap <leader>xdw    :text_deleteTrailingWhitespaces<cr>
 vnoremap <leader>xdw    :text_deleteTrailingWhitespaces<cr>
 
-" Move Lines down
+" Move lines down
 eclipseaction text_moveLineDown org.eclipse.ui.edit.text.moveLineDown
 nnoremap <leader>xJ    :text_moveLineDown<cr>
 vnoremap <leader>xJ    :text_moveLineDown<cr>
 
-" Move Lines up
+" Move lines up
 eclipseaction text_moveLineUp org.eclipse.ui.edit.text.moveLineUp
 nnoremap <leader>xK    :text_moveLineUp<cr>
 vnoremap <leader>xK    :text_moveLineUp<cr>

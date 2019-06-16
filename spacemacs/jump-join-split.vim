@@ -17,4 +17,4 @@ vnoremap <leader>jn    <Esc>i<cr><Esc>
 
 " Insert new line
 nnoremap <leader>jo    i<cr><Esc>k$
-vnoremap <leader>jo    <Esc>i<CR><Esc>k$
+vnoremap <leader>jo    <Esc>i<cr><Esc>k$
