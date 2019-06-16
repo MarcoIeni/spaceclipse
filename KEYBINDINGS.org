@@ -1,0 +1,455 @@
+* spacemacs
+
+** leader
+
+| Key binding | Description                  |
+|-------------+------------------------------|
+| ~SPC SPC~   | Execute an action            |
+| ~SPC !~     | Open terminal                |
+| ~SPC '~     | Open terminal                |
+| ~SPC *~     | Find current text in project |
+| ~SPC ; ;~   | Comment line                 |
+| ~SPC ?~     | Show key bindings            |
+
+** applications
+
+| Key binding | Description          |
+|-------------+----------------------|
+| ~SPC a k~   | Install new software |
+| ~SPC a o t~ | List TODOs           |
+| ~SPC a s~   | Open terminal        |
+
+** buffers
+
+| Key binding | Description                    |
+|-------------+--------------------------------|
+| ~SPC b b~   | Switch tab                     |
+| ~SPC b d~   | Close tab                      |
+| ~SPC b h~   | Welcome screen                 |
+| ~SPC b m~   | Show error log                 |
+| ~SPC b n~   | Next tab                       |
+| ~SPC b P~   | Copy clipboard to whole buffer |
+| ~SPC b p~   | Previous tab                   |
+| ~SPC b R~   | Revert buffer                  |
+| ~SPC b x~   | Close all tabs                 |
+| ~SPC b Y~   | Copy whole buffer              |
+| ~SPC b C-d~ | Close other tabs               |
+
+** compile-comments
+
+| Key binding | Description                                     | Language    |
+|-------------+-------------------------------------------------+-------------|
+| ~SPC c C~   | Compile selected files                          |             |
+| ~SPC c c~   | Compile all projects                            |             |
+| ~SPC c l~   | Comment line                                    | C/C++, Java |
+| ~SPC c m~   | Rebuild last make target                        |             |
+| ~SPC c p~   | Comment paragraph                               |             |
+| ~SPC c t~   | Comment from begin of buffer up to current line |             |
+| ~SPC c y~   | Copy and comment current line                   |             |
+
+** errors
+
+| Key binding | Description            |
+|-------------+------------------------|
+| ~SPC e l~   | List errors            |
+| ~SPC e x~   | Explain error at point |
+
+** frame
+
+| Key binding | Description |
+|-------------+-------------|
+| ~SPC F n~   | New frame   |
+
+** files
+
+| Key binding | Description                     |
+|-------------+---------------------------------|
+| ~SPC f b~   | List bookmarks                  |
+| ~SPC f C d~ | Convert line delimiters to Dos  |
+| ~SPC f C u~ | Convert line delimiters to Unix |
+| ~SPC f e d~ | Settings                        |
+| ~SPC f e R~ | Reload =~/.vrapperrc=           |
+| ~SPC f F~   | Find files                      |
+| ~SPC f f~   | Find files                      |
+| ~SPC f g~   | File search                     |
+| ~SPC f o~   | Open file externally            |
+| ~SPC f S~   | Save all files                  |
+| ~SPC f s~   | Save file                       |
+| ~SPC f t~   | Project explorer                |
+
+** git-vcs
+
+| Key binding   | Description                                |
+|---------------+--------------------------------------------|
+| ~SPC g c~     | Git clone                                  |
+| ~SPC g f d r~ | Compare working tree with commit           |
+| ~SPC g f d w~ | Compare working tree with head             |
+| ~SPC g f l~   | Git file log                               |
+| ~SPC g L~     | List repositories                          |
+| ~SPC g s~     | Git commit                                 |
+| ~SPC g v +~   | Git pull                                   |
+| ~SPC g v g~   | Annotate (Do it twice if it does not work) |
+| ~SPC g v I~   | Add current file to .gitignore             |
+| ~SPC g v l~   | Show log                                   |
+
+** help
+
+| Key binding | Description                      |
+|-------------+----------------------------------|
+| ~SPC h SPC~ | Help search                      |
+| ~SPC h k~   | Show key bindings                |
+| ~SPC h d b~ | Show key bindings                |
+| ~SPC h d k~ | Show key bindings                |
+| ~SPC h I~   | Get info about your installation |
+| ~SPC h r~   | Help docs                        |
+| ~SPC h p~   | Marketplace                      |
+| ~SPC h T~   | Tip of day                       |
+
+** insertion
+
+| Key binding | Description                  |
+|-------------+------------------------------|
+| ~SPC i j~   | Insert line below            |
+| ~SPC i k~   | Insert line above            |
+| ~SPC i l p~ | Insert lorem ipsum paragraph |
+| ~SPC i l s~ | Insert lorem ipsum sentence  |
+| ~SPC i s~   | Insert snippet               |
+
+** jump-join-split
+
+| Key binding | Description                   | Languages   |
+|-------------+-------------------------------+-------------|
+| ~SPC j =~   | Reformat code                 | C/C++, Java |
+| ~SPC j D~   | Project explorer              |             |
+| ~SPC j d~   | Project explorer              |             |
+| ~SPC j n~   | Insert new line and move down |             |
+| ~SPC j o~   | Insert new line               |             |
+
+** narrow-numbers
+
+| Key binding | Description      |
+|-------------+------------------|
+| ~SPC n +~   | Increment number |
+| ~SPC n =~   | Increment number |
+| ~SPC n -~   | Decrement number |
+
+** projects
+
+| Key binding | Description          |
+|-------------+----------------------|
+| ~SPC p a~   | Go to test           |
+| ~SPC p b~   | Switch tab           |
+| ~SPC p h~   | Switch tab           |
+| ~SPC p c~   | Compile all projects |
+| ~SPC p D~   | Project explorer     |
+| ~SPC p t~   | Project explorer     |
+| ~SPC p f~   | Find files           |
+| ~SPC p I~   | Invalidate cache     |
+| ~SPC p p~   | Switch workspace     |
+| ~SPC p R~   | File search          |
+| ~SPC p v~   | Git commit           |
+
+** quit
+
+| Key binding | Description |
+|-------------+-------------|
+| ~SPC q f~   | Quit        |
+| ~SPC q Q~   | Quit        |
+| ~SPC q q~   | Quit        |
+| ~SPC q r~   | Restart     |
+
+** registers-rings-resume
+
+| Key binding | Description |
+|-------------+-------------|
+| ~SPC r s~   | File search |
+
+** search-symbol
+
+| Key binding | Description                   |
+|-------------+-------------------------------|
+| ~SPC s c~   | Clear search highlights.      |
+| ~SPC s P~   | Find current text in project. |
+| ~SPC s p~   | File search                   |
+
+** toggles
+
+| Key binding | Description             |
+|-------------+-------------------------|
+| ~SPC t E~   | Toggle vrapper plugin   |
+| ~SPC t l~   | Toggle truncate lines   |
+| ~SPC t m T~ | Toggle status bar       |
+| ~SPC t n~   | Toggle line numbers     |
+| ~SPC t w~   | Toggle show whitespaces |
+
+** text
+
+| Key binding | Description                 | Languages |
+|-------------+-----------------------------+-----------|
+| ~SPC x c~   | Count words and characters  |           |
+| ~SPC x w c~ | Count words and characters  |           |
+| ~SPC x d w~ | Delete trailing whitespaces |           |
+| ~SPC x J~   | Move lines down             |           |
+| ~SPC x K~   | Move lines up               |           |
+| ~SPC x l s~ | Sort lines                  | C/C++     |
+| ~SPC x t c~ | Transpose characters        |           |
+| ~SPC x t l~ | Transpose lines             |           |
+| ~SPC x U~   | Upcase region               |           |
+| ~SPC x u~   | Downcase region             |           |
+
+** ui_toggles-themes
+
+| Key binding | Description        |
+|-------------+--------------------|
+| ~SPC T F~   | Toggle full screen |
+| ~SPC T t~   | Toggle toolbar     |
+
+** windows
+
+| Key binding | Description        |
+|-------------+--------------------|
+| ~SPC w /~   | Split vertically   |
+| ~SPC w v~   | Split vertically   |
+| ~SPC w -~   | Split horizontally |
+| ~SPC w s~   | Split horizontally |
+| ~SPC w F~   | New frame          |
+| ~SPC w m~   | Maximize window    |
+
+** zoom
+
+| Key binding | Description        |
+|-------------+--------------------|
+| ~SPC z x +~ | Increase font size |
+| ~SPC z x =~ | Increase font size |
+| ~SPC z x -~ | Decrease font size |
+
+** miscellaneous
+
+| Key binding | Description       |
+|-------------+-------------------|
+| ~gd~        | Go to declaration |
+| ~zm~        | Close all folds   |
+| ~zr~        | Open all folds    |
+
+* major
+
+** leader
+
+| Key binding | Description   |
+|-------------+---------------|
+| ~SPC m =~   | Reformat code |
+
+** compile
+
+| Key binding | Description            |
+|-------------+------------------------|
+| ~SPC m c C~ | Compile selected files |
+| ~SPC m c c~ | Compile all projects   |
+
+** debug
+
+| Key binding | Description                        |
+|-------------+------------------------------------|
+| ~SPC m d B~ | List breakpoints                   |
+| ~SPC m d b~ | Toggle breakpoint                  |
+| ~SPC m d C~ | Clear all breakpoints              |
+| ~SPC m d c~ | Continue (Go to next breakpoint)   |
+| ~SPC m d d~ | Debug                              |
+| ~SPC m d k~ | Kill execution                     |
+| ~SPC m d n~ | Next (Step over)                   |
+| ~SPC m d o~ | Step out (same as "finish" in gdb) |
+| ~SPC m d r~ | Select debug configuration         |
+| ~SPC m d s~ | Step (Step into)                   |
+
+** go
+
+| Key binding | Description          | Languages   |
+|-------------+----------------------+-------------|
+| ~SPC m g a~ | Toggle source/header | C/C++       |
+| ~SPC m g g~ | Go to declaration    | C/C++, Java |
+| ~SPC m g i~ | Go to implementation | Java        |
+| ~SPC m g j~ | Next member          | C/C++, Java |
+| ~SPC m g n~ | Next member          | C/C++, Java |
+| ~SPC m g k~ | Previous member      | C/C++, Java |
+| ~SPC m g N~ | Previous member      | C/C++, Java |
+| ~SPC m g p~ | Previous member      | C/C++, Java |
+
+** help-hierarchy
+
+| Key binding | Description                    | Languages   |
+|-------------+--------------------------------+-------------|
+| ~SPC m h c~ | Show call hierarchy            | C/C++       |
+| ~SPC m h h~ | Open attached javadoc          | Java        |
+| ~SPC m h i~ | Show inheritance hierarchy     | C/C++, Java |
+| ~SPC m h r~ | Show read access in workspace  | Java        |
+| ~SPC m h u~ | Show usages                    | C/C++, Java |
+| ~SPC m h w~ | Show write access in workspace | Java        |
+
+** projects
+
+| Key binding | Description          |
+|-------------+----------------------|
+| ~SPC m p b~ | Compile all projects |
+| ~SPC m p c~ | Create project       |
+| ~SPC m p i~ | Import project       |
+| ~SPC m p o~ | Open project         |
+| ~SPC m p r~ | Run project          |
+
+** refactoring
+
+| Key binding   | Description                      | Languages   |
+|---------------+----------------------------------+-------------|
+| ~SPC m r C~   | Code cleanup                     | Java        |
+| ~SPC m r c~   | Create constructor using fields  | Java        |
+| ~SPC m r E~   | Encapsulate field                | Java        |
+| ~SPC m r e C~ | Extract class                    | Java        |
+| ~SPC m r e c~ | Extract constant                 | C/C++, Java |
+| ~SPC m r e i~ | Extract interface                | Java        |
+| ~SPC m r e m~ | Extract method                   | C/C++, Java |
+| ~SPC m r e v~ | Extract local variable           | C/C++, Java |
+| ~SPC m r e s~ | Extract superclass               | Java        |
+| ~SPC m r g~   | Generate getters and setters     | C/C++, Java |
+| ~SPC m r h~   | Generate hashCode() and equals() | Java        |
+| ~SPC m r I~   | Implement methods                | C/C++, Java |
+| ~SPC m r i~   | Optimize imports                 | C/C++, Java |
+| ~SPC m r M~   | Change method signature          | Java        |
+| ~SPC m r m~   | Sort Members                     | Java        |
+| ~SPC m r R~   | Choose a refactoring action      | Java        |
+| ~SPC m r r~   | Rename                           | C/C++, Java |
+| ~SPC m r S~   | Source menu                      | C/C++, Java |
+| ~SPC m r s~   | Generate toString()              | Java        |
+| ~SPC m r t~   | Toggle function                  | C/C++       |
+* extra
+
+** applications
+
+| Key binding | Description     |
+|-------------+-----------------|
+| ~SPC a K~   | Marketplace     |
+| ~SPC a S~   | Choose terminal |
+| ~SPC a t~   | List TODOs      |
+| ~SPC a v~   | Show view       |
+
+** bookmarks
+
+| Key binding | Description    |
+|-------------+----------------|
+| ~SPC B a~   | Add bookmark   |
+| ~SPC B l~   | List bookmarks |
+| ~SPC B n~   | Next bookmark  |
+
+** buffers
+
+| Key binding | Description      | Languages |
+|-------------+------------------+-----------|
+| ~SPC b C~   | Tab context menu |           |
+| ~SPC b k~   | Next tab         |           |
+| ~SPC b j~   | Previous tab     | C/C++     |
+
+** compile-comments
+
+| Key binding | Description          | Languages   |
+|-------------+----------------------+-------------|
+| ~SPC c B~   | Remove block comment | C/C++, Java |
+| ~SPC c b~   | Add block comment    | C/C++, Java |
+| ~SPC c j~   | Add javadoc          | Java        |
+
+** errors
+
+| Key binding | Description   |
+|-------------+---------------|
+| ~SPC e r~   | Resolve error |
+
+** files
+
+| Key binding | Description          |
+|-------------+----------------------|
+| ~SPC f N~   | New quick menu       |
+| ~SPC f n~   | New                  |
+| ~SPC f p~   | Show file properties |
+
+** git-vcs
+
+| Key binding | Description             |
+|-------------+-------------------------|
+| ~SPC g a~   | Git add                 |
+| ~SPC g b~   | Git branches (checkout) |
+| ~SPC g F~   | Git fetch               |
+| ~SPC g P~   | Git pull                |
+| ~SPC g p~   | Git push                |
+
+** help
+
+| Key binding | Description      |
+|-------------+------------------|
+| ~SPC h a~   | About            |
+| ~SPC h c~   | Cheat Sheet      |
+| ~SPC h h~   | Dynamic help     |
+| ~SPC h i~   | Help index       |
+| ~SPC h t~   | Trips and tricks |
+
+** jump
+
+| Key binding | Description                     | Languages   |
+|-------------+---------------------------------+-------------|
+| ~SPC j c~   | Jump to class                   | Java        |
+| ~SPC j e~   | Jump to element in current file | C/C++, Java |
+| ~SPC j s~   | Jump to symbol                  | C/C++       |
+
+** perspectives
+
+| Key binding | Description               |
+|-------------+---------------------------|
+| ~SPC P c~   | Customize perspective     |
+| ~SPC P d~   | Close current perspective |
+| ~SPC P N~   | Previous perspective      |
+| ~SPC P p~   | Previous perspective      |
+| ~SPC P n~   | Next perspective          |
+| ~SPC P P~   | Show perspective          |
+| ~SPC P r~   | Reset perspective         |
+| ~SPC P s~   | Save perspective          |
+| ~SPC P x~   | Close all perspectives    |
+
+** projects
+
+| Key binding | Description        |
+|-------------+--------------------|
+| ~SPC p P~   | Project properties |
+
+** run
+
+| Key binding | Description              | Languages |
+|-------------+--------------------------+-----------|
+| ~SPC m R b~ | Build all                |           |
+| ~SPC m R c~ | Clean                    |           |
+| ~SPC m R r~ | Run                      |           |
+| ~SPC m R s~ | Select run configuration |           |
+| ~SPC m R t~ | Build target             | C/C++     |
+
+** search
+
+| Key binding | Description            |
+|-------------+------------------------|
+| ~SPC s f~   | Search in current file |
+
+** ui_toggles-themes
+
+| Key binding | Description           |
+|-------------+-----------------------|
+| ~SPC T l~   | Toggle lock toolbar   |
+| ~SPC T m~   | Toggle hide trim bars |
+
+** toggles
+
+| Key binding | Description                              |
+|-------------+------------------------------------------|
+| ~SPC t b~   | Toggle build automatically               |
+| ~SPC t s~   | Highlight line number of unsaved changes |
+
+** windows
+
+| Key binding | Description              |
+|-------------+--------------------------|
+| ~SPC w C~   | Show window context menu |
+| ~SPC w c~   | Clone tab                |
+| ~SPC w R~   | Show ruler context menu  |
