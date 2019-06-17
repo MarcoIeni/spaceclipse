@@ -1,3 +1,8 @@
+" Quick diff
+eclipseuiaction files_diff org.eclipse.ui.edit.text.showChangeRulerInformation
+nnoremap <leader>fd    :files_diff<cr>
+vnoremap <leader>fd    :files_diff<cr>
+
 " New quick menu
 eclipseaction files_quickNew org.eclipse.ui.file.newQuickMenu
 nnoremap <leader>fN    :files_quickNew<cr>

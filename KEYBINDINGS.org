@@ -364,6 +364,7 @@
 
 | Key binding | Description          |
 |-------------+----------------------|
+| ~SPC f d~   | Quick diff           |
 | ~SPC f N~   | New quick menu       |
 | ~SPC f n~   | New                  |
 | ~SPC f p~   | Show file properties |
