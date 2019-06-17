@@ -21,15 +21,15 @@ used to bind the Eclipse action with the specified <id> to a (command line mode)
 command <name>.
 
 Spaceclipse provides different files, which can be included individually in
-your own =.vrapperrc= file, in order to get only the functionalities you want.
+your own =.vrapperrc=, in order to get only the functionalities you want.
 
 * Key bindings
 Spaceclipse is composed of three modules:
-- spacemacs :: This module contains Spacemacs settings and key bindings
+- spacemacs :: Contains Spacemacs settings and key bindings
   that can be replicated with a similar behaviour in Eclipse.
-- extra :: This module contains settings and key bindings not present in
+- extra :: Contains settings and key bindings not present in
   Spacemacs, but that may be useful in Eclipse.
-- major :: This module contains key bindings that start with ~SPC m~, that may
+- major :: Contains key bindings that start with ~SPC m~, that may
   or may not be present in some Spacemacs major mode.
 
 Furthermore, Spaceclipse provides some of the features of Spacemacs hybrid
@@ -38,8 +38,8 @@ mode, which may be enabled by sourcing the file =~/spaceclipse/hybrid.vim=.
 Read [[./KEYBINDINGS.org]] to see all 200+ available key bindings.
 
 * Installation
-1. Install Vrapper from the [[https://marketplace.eclipse.org/content/vrapper-vim][Marketplace]] or by going to Help -> Install New
-  Software and inserting the update site
+1. Install Vrapper from the [[https://marketplace.eclipse.org/content/vrapper-vim][Marketplace]] or by going to
+  =Help -> Install New Software= and inserting the update site
   http://vrapper.sourceforge.net/update-site/stable
 2. Go to =Preferences -> General -> Keys=. Search for all the key bindings that
   you normally use in vim (like ~<C-f>~ and ~<C-b>~ for example) and click on
@@ -88,9 +88,9 @@ actions are named with the following convention: =moduleName_functionName=.
 
 ** Support new languages
 Currently Spaceclipse only supports C/C++ and Java for language specific
-commands,but adding a new language is super easy!
+commands, but adding a new language is super easy!
 
-Execute =grep "^au " -r ~/spaceclipse/= to see special commands that needs to be
+Execute =grep "^au " -r ~/spaceclipse/= to see commands that needs to be
 adapted to other languages.
 * Tips
 
