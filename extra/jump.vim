@@ -1,5 +1,5 @@
 " Jump to class
-eclipseaction jump_class org.eclipse.jdt.ui.navigate.open.type
+au "Java Editor" eclipseaction jump_class org.eclipse.jdt.ui.navigate.open.type
 nnoremap <leader>jc    :jump_class<cr>
 vnoremap <leader>jc    :jump_class<cr>
 

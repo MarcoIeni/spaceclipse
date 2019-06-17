@@ -10,7 +10,7 @@ nnoremap <leader>mgg    :go_declaration<cr>
 vnoremap <leader>mgg    :go_declaration<cr>
 
 " Go to implementation
-eclipseuiaction go_implementation org.eclipse.jdt.ui.edit.text.java.open.implementation
+au "Java Editor" eclipseuiaction go_implementation org.eclipse.jdt.ui.edit.text.java.open.implementation
 nnoremap <leader>mgi    :go_implementation<cr>
 vnoremap <leader>mgi    :go_implementation<cr>
 
