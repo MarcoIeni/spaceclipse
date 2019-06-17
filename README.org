@@ -1,6 +1,110 @@
+#+TITLE: Spaceclipse
+
+[[http://spacemacs.org][file:https://cdn.rawgit.com/syl20bnr/spacemacs/442d025779da2f62fc86c2082703697714db6514/assets/spacemacs-badge.svg]]
+[[https://paypal.me/MarcoIeni][https://img.shields.io/badge/Paypal-Donate-blue.svg]]
+
+* Presentation
+This project tries to mimic [[http://spacemacs.org][Spacemacs]] key bindings in Eclipse IDE.
+
+For instance, ~SPC b b~ in Spacemacs let you switch between buffers, so it makes
+sense to map it to the "Quick switch editor" Eclipse command.
+
+* How it works
+This project can be seen as a set of configuration files for the [[http://vrapper.sourceforge.net/][Vrapper]] plugin,
+which enables vim emulation inside Eclipse.
+=~/.vrapperrc= is the file where Vrapper lets you add Vim initialization
+commands, i.e. this file is like =~/.vimrc= for vim.
+
+IdeaVim parses the [[http://vrapper.sourceforge.net/features/][most common]] vim commands, together with the custom
+=:eclipseaction[!] <name> <id>= and =:eclipseuiaction[!] <name> <id>= commands,
+used to bind the Eclipse action with the specified <id> to a (command line mode)
+command <name>.
+
+Spaceclipse provides different files, which can be included individually in
+your own =.vrapperrc= file, in order to get only the functionalities you want.
+
+* Key bindings
+Spaceclipse is composed of three modules:
+- spacemacs :: This module contains Spacemacs settings and key bindings
+  that can be replicated with a similar behaviour in Eclipse.
+- extra :: This module contains settings and key bindings not present in
+  Spacemacs, but that may be useful in Eclipse.
+- major :: This module contains key bindings that start with ~SPC m~, that may
+  or may not be present in some Spacemacs major mode.
+
+Furthermore, Spaceclipse provides some of the features of Spacemacs hybrid
+mode, which may be enabled by sourcing the file =~/spaceclipse/hybrid.vim=.
+
+Read [[./KEYBINDINGS.org]] to see all 200+ available key bindings.
+
+* Installation
+1. Install Vrapper from the [[https://marketplace.eclipse.org/content/vrapper-vim][Marketplace]] or by going to Help -> Install New
+  Software and inserting the update site
+  http://vrapper.sourceforge.net/update-site/stable
+2. Go to =Preferences -> General -> Keys=. Search for all the key bindings that
+  you normally use in vim (like ~<C-f>~ and ~<C-b>~ for example) and click on
+  "Unbind command" if you wish to use them in vim.
+3. Clone this repository in your home directory:
+  #+begin_src sh
+  cd ~
+  git clone https://github.com/MarcoIeni/spaceclipse
+  #+end_src
+4. In your home directory, create the file =.vrapper= and edit it in order to
+  include the modules you want by sourcing the relative source files.
+  In the following there is an example of =.vrapper= file that includes all
+  the functionalities offered by Spaceclipse.
+  In this file you can also include your own vim commands.
+  #+begin_src vimrc
+  " Selected Spaceclipse modules
+  source ~/spaceclipse/spacemacs.vim
+  source ~/spaceclipse/extra.vim
+  source ~/spaceclipse/major.vim
+  source ~/spaceclipse/hybrid.vim
+
+  " My own vim commands
+  nnoremap Y y$
+  #+end_src
+5. (optional) source your vimrc file by adding the line =source ~/.vimrc= in
+  =.ideavimrc= (you may break something).
+
+* Update
+In order to update run =git pull= inside the spaceclipse directory.
+
 * Contributing
-In order to avoid conflicts for the sake of a good organization, key binding are named with the following convention: moduleName_functionName.
+** List IDE actions
+1. Install [[https://marketplace.eclipse.org/content/eclipse-pde-plug-development-environment][Eclipse PDE (Plug-in Development Environment)]]
+2. Click on =File -> New -> Other...= and select "Cheat Sheet".
+  Select a project, assign a filename, leave "Simple Cheat Sheet" selected and
+  click "Finish".
+3. Open the file, expand "Title", click on "Item" and press the "Browse..."
+  button.
+
+If you find a useful IDE action that is not present yet, feel free to open a
+pull request to add it.
+
+** Conventions
+In order to avoid conflicts for the sake of a good organization, key bindings
+actions are named with the following convention: =moduleName_functionName=.
 
 ** Support new languages
-Currently I only support C/C++ and Java. Eclipse has some special command for every language. Adding a new language is super easy!
-Do ~grep cdt -r .~ and ~grep jdt -r .~ from the project root directory to see special commands that needs to be adapted to other languages.
+Currently Spaceclipse only supports C/C++ and Java for language specific
+commands,but adding a new language is super easy!
+
+Execute =grep "^au " -r ~/spaceclipse/= to see special commands that needs to be
+adapted to other languages.
+* Tips
+
+** Go back to code
+Key bindings only work  when you are inside the code.
+For example, if you are inside the project explorer they don't work.
+Go to =Preferences -> General -> Keys= and search for
+the command "Activate Editor".
+This binding will bring the focus to the last visited code window and you will
+be able to use Spaceclipse key bindings again.
+By default this command is mapped to <F12>, you can change it from this menu.
+
+* Resources
+- [[http://vrapper.sourceforge.net/documentation/][Vrapper documentation]]
+* Related projects
+- [[https://github.com/MarcoIeni/intelli-space][IntelliSpace]] - Spacemacs' like key bindings for IntelliJ platform.
+- [[https://github.com/VSpaceCode/VSpaceCode][VSpaceCode]] - Spacemacs' like key bindings for Visual Studio Code
