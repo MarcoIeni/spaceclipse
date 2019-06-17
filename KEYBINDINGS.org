@@ -453,3 +453,11 @@
 | ~SPC w C~   | Show window context menu |
 | ~SPC w c~   | Clone tab                |
 | ~SPC w R~   | Show ruler context menu  |
+
+** zoom
+
+| Key binding | Description        |
+|-------------+--------------------|
+| ~SPC z +~   | Increase font size |
+| ~SPC z =~   | Increase font size |
+| ~SPC z -~   | Decrease font size |

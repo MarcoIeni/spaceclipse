@@ -14,3 +14,4 @@ source ~/spaceclipse/extra/search.vim
 source ~/spaceclipse/extra/toggles.vim
 source ~/spaceclipse/extra/ui_toggles-themes.vim
 source ~/spaceclipse/extra/windows.vim
+source ~/spaceclipse/extra/zoom.vim
