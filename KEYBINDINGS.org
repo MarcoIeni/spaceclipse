@@ -37,7 +37,7 @@
 
 ** compile-comments
 
-| Key binding | Description                                     | Language    |
+| Key binding | Description                                     | Languages   |
 |-------------+-------------------------------------------------+-------------|
 | ~SPC c C~   | Compile selected files                          |             |
 | ~SPC c c~   | Compile all projects                            |             |
