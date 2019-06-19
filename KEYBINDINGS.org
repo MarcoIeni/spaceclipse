@@ -341,11 +341,11 @@ master branch.
 
 ** bookmarks
 
-| Key binding | Description    |
-|-------------+----------------|
-| ~SPC B a~   | Add bookmark   |
-| ~SPC B l~   | List bookmarks |
-| ~SPC B n~   | Next bookmark  |
+| Key binding | Description    | Languages |
+|-------------+----------------+-----------|
+| ~SPC B a~   | Add bookmark   |           |
+| ~SPC B l~   | List bookmarks |           |
+| ~SPC B n~   | Next bookmark  | C/C++     |
 
 ** buffers
 
