@@ -239,6 +239,7 @@ master branch.
 | ~gd~        | Go to declaration |
 | ~zm~        | Close all folds   |
 | ~zr~        | Open all folds    |
+| ~<M-x>~     | Execute an action |
 
 * major
 

@@ -13,3 +13,7 @@ vnoremap zm    :misc_closeFolds<cr>
 eclipseaction misc_openFolds org.eclipse.ui.edit.text.folding.expand_all
 nnoremap zr    :misc_openFolds<cr>
 vnoremap zr    :misc_openFolds<cr>
+
+nnoremap <M-x>     :leader_quickAccess<cr>
+vnoremap <M-x>     :leader_quickAccess<cr>
+inoremap <M-x>     <Esc>:leader_quickAccess<cr>
