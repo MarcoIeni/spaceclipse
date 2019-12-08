@@ -23,10 +23,10 @@ inoremap <C-p>    <up>
 inoremap <C-n>    <down>
 
 " Go right
-inoremap <C-f>    <Esc>la
+inoremap <C-f>    <Right>
 
 " Go left
-inoremap <C-b>    <Esc>i
+inoremap <C-b>    <Left>
 
 " Delete to line end
 inoremap <C-k>    <Esc>lDa
