@@ -175,11 +175,12 @@ master branch.
 
 ** search-symbol
 
-| Key binding | Description                   |
-|-------------+-------------------------------|
-| ~SPC s c~   | Clear search highlights.      |
-| ~SPC s P~   | Find current text in project. |
-| ~SPC s p~   | File search                   |
+| Key binding | Description                   | Languages   |
+|-------------+-------------------------------+-------------|
+| ~SPC s c~   | Clear search highlights.      |             |
+| ~SPC s e~   | Rename                        | C/C++, Java |
+| ~SPC s P~   | Find current text in project. |             |
+| ~SPC s p~   | File search                   |             |
 
 ** toggles
 
