@@ -14,6 +14,7 @@ master branch.
 | Key binding | Description                  |
 |-------------+------------------------------|
 | ~SPC SPC~   | Execute an action            |
+| ~SPC TAB~   | Last buffer                  |
 | ~SPC !~     | Open terminal                |
 | ~SPC '~     | Open terminal                |
 | ~SPC *~     | Find current text in project |

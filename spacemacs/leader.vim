@@ -3,6 +3,10 @@ eclipseaction leader_quickAccess org.eclipse.ui.window.quickAccess
 nnoremap <leader><space>    :leader_quickAccess<cr>
 vnoremap <leader><space>    :leader_quickAccess<cr>
 
+" Focus last buffer
+nnoremap <leader><tab>    <C-S-6>
+vnoremap <leader><tab>    <Esc><C-S-6>
+
 " Open terminal
 " You may need to install 'TM Terminal' from the Eclipse */releases update site
 nnoremap <leader>!    :applications_shell<cr>
