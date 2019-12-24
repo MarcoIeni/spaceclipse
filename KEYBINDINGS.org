@@ -217,22 +217,24 @@ master branch.
 
 ** windows
 
-| Key binding   | Description        |
-|---------------+--------------------|
-| ~SPC w /~     | Split vertically   |
-| ~SPC w v~     | Split vertically   |
-| ~SPC w -~     | Split horizontally |
-| ~SPC w s~     | Split horizontally |
-| ~SPC w F~     | New frame          |
-| ~SPC w m~     | Maximize window    |
-| ~SPC w h~     | Focus window left  |
-| ~SPC w LEFT~  | Focus window left  |
-| ~SPC w j~     | Focus window down  |
-| ~SPC w DOWN~  | Focus window down  |
-| ~SPC w k~     | Focus window up    |
-| ~SPC w UP~    | Focus window up    |
-| ~SPC w l~     | Focus window right |
-| ~SPC w RIGHT~ | Focus window right |
+| Key binding   | Description                  |
+|---------------+------------------------------|
+| ~SPC w /~     | Split vertically             |
+| ~SPC w v~     | Split vertically             |
+| ~SPC w -~     | Split horizontally           |
+| ~SPC w s~     | Split horizontally           |
+| ~SPC w F~     | New frame                    |
+| ~SPC w m~     | Maximize window              |
+| ~SPC w h~     | Focus window left            |
+| ~SPC w LEFT~  | Focus window left            |
+| ~SPC w j~     | Focus window down            |
+| ~SPC w DOWN~  | Focus window down            |
+| ~SPC w k~     | Focus window up              |
+| ~SPC w UP~    | Focus window up              |
+| ~SPC w l~     | Focus window right           |
+| ~SPC w RIGHT~ | Focus window right           |
+| ~SPC w S~     | Split window below and focus |
+| ~SPC w V~     | Split window right and focus |
 
 ** zoom
 

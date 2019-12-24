@@ -44,3 +44,11 @@ nnoremap <leader>wl          <C-w>l
 vnoremap <leader>wl          <Esc><C-w>l
 nnoremap <leader>w<Right>    <C-w>l
 vnoremap <leader>w<Right>    <Esc><C-w>l
+
+" Split window below and focus
+nnoremap <leader>wS    <C-w>s<C-w>j
+vnoremap <leader>wS    <Esc><C-w>s<C-w>j
+
+" Split window right and focus
+nnoremap <leader>wV    <C-w>v<C-w>l
+vnoremap <leader>wV    <Esc><C-w>v<C-w>l
