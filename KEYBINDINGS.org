@@ -475,6 +475,7 @@ master branch.
 |-------------+--------------------------|
 | ~SPC w C~   | Show window context menu |
 | ~SPC w c~   | Clone tab                |
+| ~SPC w M~   | Maximize window          |
 | ~SPC w R~   | Show ruler context menu  |
 
 ** zoom
