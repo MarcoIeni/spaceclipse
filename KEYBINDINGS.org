@@ -224,7 +224,7 @@ master branch.
 | ~SPC w -~     | Split horizontally           |
 | ~SPC w s~     | Split horizontally           |
 | ~SPC w F~     | New frame                    |
-| ~SPC w m~     | Maximize window              |
+| ~SPC w m~     | Maximize editor              |
 | ~SPC w h~     | Focus window left            |
 | ~SPC w LEFT~  | Focus window left            |
 | ~SPC w j~     | Focus window down            |
