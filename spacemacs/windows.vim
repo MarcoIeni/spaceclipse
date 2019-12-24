@@ -1,16 +1,16 @@
 " Split vertically
 eclipseaction windows_splitVertically org.eclipse.ui.window.splitEditor(Splitter.isHorizontal=false)
-nnoremap <leader>w/    :windows_splitVertically<cr>
-vnoremap <leader>w/    :windows_splitVertically<cr>
-nnoremap <leader>wv    :windows_splitVertically<cr>
-vnoremap <leader>wv    :windows_splitVertically<cr>
+nnoremap <leader>w/    <C-w>v
+vnoremap <leader>w/    <C-w>v
+nnoremap <leader>wv    <C-w>v
+vnoremap <leader>wv    <C-w>v
 
 " Split horizontally
 eclipseaction windows_splitHorizontally org.eclipse.ui.window.splitEditor(Splitter.isHorizontal=true)
-nnoremap <leader>w-    :windows_splitHorizontally<cr>
-vnoremap <leader>w-    :windows_splitHorizontally<cr>
-nnoremap <leader>ws    :windows_splitHorizontally<cr>
-vnoremap <leader>ws    :windows_splitHorizontally<cr>
+nnoremap <leader>w-    <C-w>s
+vnoremap <leader>w-    <C-w>s
+nnoremap <leader>ws    <C-w>s
+vnoremap <leader>ws    <C-w>s
 
 " New frame
 nnoremap <leader>wF    :frame_new<cr>
