@@ -106,5 +106,5 @@ By default this command is mapped to <F12>, you can change it from this menu.
 * Resources
 - [[http://vrapper.sourceforge.net/documentation/][Vrapper documentation]]
 * Related projects
-- [[https://github.com/MarcoIeni/intelli-space][IntelliSpace]] - Spacemacs' like key bindings for IntelliJ platform.
+- [[https://github.com/MarcoIeni/intellimacs][Intellimacs]] - Spacemacs' like key bindings for IntelliJ platform.
 - [[https://github.com/VSpaceCode/VSpaceCode][VSpaceCode]] - Spacemacs' like key bindings for Visual Studio Code
